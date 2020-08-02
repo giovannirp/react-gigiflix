@@ -13,6 +13,9 @@ const Header = () => {
             {/* <Button as={Link} to="/cadastro/video">
                 New Vídeo
             </Button> */}
+            <Button as={Link} to="/sobre">
+               Sobre
+            </Button>
         </nav>
     )
 }

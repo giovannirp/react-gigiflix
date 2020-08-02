@@ -5,18 +5,18 @@ import Footer from '../../components/footer/Footer';
 import dadosInicias from '../../data/dados_iniciais.json';
 import Banner from '../../components/BannerMain';
 import Carrocel from '../../components/Carousel';
+import PageDefault from '../../components/PageDefault';
 
 const App = () => {
   return (
-    <div>
-      <Header />
+    <PageDefault>
       <Banner
         videoTitle={dadosInicias.categorias[4].videos[4].titulo}
         url={dadosInicias.categorias[4].videos[4].url}
         videoDescription={"O que é front-end? Trabalhando na área"}
       />
 
-       <Carrocel
+      <Carrocel
         ignoreFirstVideo
         category={dadosInicias.categorias[0]}
       />
@@ -45,10 +45,9 @@ const App = () => {
       <Carrocel
         ignoreFirstVideo
         category={dadosInicias.categorias[5]}
-      /> 
+      />
 
-      <Footer />
-    </div>
+    </PageDefault>
   );
 }
 

@@ -6,6 +6,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home/App';
 import NotFound from './pages/NotFound/NotFound';
 import CadastroVideo from './pages/Cadastro/Cadastro';
+import Sobre from './pages/Sobre/Sobre';
+
 
 
 ReactDOM.render(
@@ -13,6 +15,7 @@ ReactDOM.render(
     <Switch>
       <Home path="/" component={Home} exact />
       <Route path="/cadastro/video" component={CadastroVideo} />
+      <Route path="/sobre" component={Sobre} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>,
