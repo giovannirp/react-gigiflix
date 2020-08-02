@@ -10,9 +10,9 @@ const Header = () => {
             <Link to="/">
                 <img className="Logo" src={Logo} alt="GigiFlix" />
             </Link>
-            <Button as={Link} to="/cadastro/video">
+            {/* <Button as={Link} to="/cadastro/video">
                 New Vídeo
-            </Button>
+            </Button> */}
         </nav>
     )
 }
